@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Admission";
+}
+
+<div style="background-color: rgb(65, 65, 219);">
+    <h1 style="text-align: center; color: rgb(245, 245, 245);">APPLY FOR HOSTEL</h1>
+</div>
+<div id="application-form">
+    <form name="application-for-hostel" action="#" onsubmit="return apply_check()">
+        <div class="container">
+            <div class="row">
+                <div class="col py-2">
+                    <label for="fsname"><small>First Name*</small></label>
+                    <input type="text" required class="form-control" name="sfname" id="sfname" placeholder="Enter Frist Name">
+                </div>
+                <div class="col py-2">
+                    <label for="lsname"><small> Last Name</small></label>
+                    <input type="text" class="form-control" name="slsname" id="slname" placeholder="Enter Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col py-2">
+                    <label for="semail"><small>Email Id*</small></label>
+                    <input type="email" required class="form-control" name="email" id="semail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <dov class="col py-2">
+                    <label for="scontact"><small>Contact Number*</small></label>
+                    <input type="number" required class="form-control" name="scontact" id="scontact" placeholder="Contact No">
+            </div>
+            <div class="row">
+                <div class="col py-2">
+                    <label for="dob"><small>Date of Birth</small></label>
+                    <input type="date" class="form-control" name="sdob" id="sdob">
+                </div>
+                <div class="col py-2">
+                    <label for="dob"><small>Course</small></label>
+                    <select class="form-control" id="scourse" name="scourse">
+                        <option value="pu1">I PUC</option>
+                        <option value="pu2">II PUC</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
